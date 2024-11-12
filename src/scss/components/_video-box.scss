@@ -1,0 +1,48 @@
+.video-box {
+    position: relative;
+  
+    background-color: var(--yellow);
+    border: 2px solid var(--brown);
+    box-shadow: 3px 3px 0px 0px #3b2027, 0px -3px 0px 0px var(--yellow-dark) inset,
+      0px 3px 0px 0px var(--yellow-light) inset;
+    border-radius: 4px;
+    padding: 1.5rem;
+    transition: all 0.3s;
+  
+    .play-wrap {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 82px;
+      }
+    }
+  
+    .play:hover{
+      filter: brightness(0.8);
+      cursor: pointer;
+    }
+  
+    @include mobile {
+      padding: 0.8rem;
+    }
+    iframe {
+      z-index: 1;
+      width: 100% !important;
+      height: 100% !important;
+      max-height: 500px !important;
+      min-height: 500px !important;
+  
+      @include mobile {
+        min-height: 250px !important;
+      }
+    }
+  }
