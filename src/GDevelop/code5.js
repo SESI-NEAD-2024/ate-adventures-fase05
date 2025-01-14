@@ -97,7 +97,7 @@ gdjs.Conclui_95ScormCode.GDLife_9595GetObjects2= [];
 gdjs.Conclui_95ScormCode.GDLife_9595GetObjects3= [];
 
 
-gdjs.Conclui_95ScormCode.userFunc0x1eb5510 = function GDJSInlineCode(runtimeScene) {
+gdjs.Conclui_95ScormCode.userFunc0x1656cb8 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 console.log("Inicio JS Setup --------------------------------------------------");
 
@@ -157,7 +157,7 @@ gdjs.Conclui_95ScormCode.eventsList0 = function(runtimeScene) {
 {
 
 
-gdjs.Conclui_95ScormCode.userFunc0x1eb5510(runtimeScene);
+gdjs.Conclui_95ScormCode.userFunc0x1656cb8(runtimeScene);
 
 }
 
@@ -234,7 +234,7 @@ gdjs.Conclui_95ScormCode.forEachTemporary2 = gdjs.Conclui_95ScormCode.GDSparkleO
 gdjs.Conclui_95ScormCode.GDSparkleObjects2.push(gdjs.Conclui_95ScormCode.forEachTemporary2);
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(26919748);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(27144652);
 }
 if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.Conclui_95ScormCode.GDSparkleObjects2.length ;i < len;++i) {
@@ -246,7 +246,7 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.Conclui_95ScormCode.userFunc0x1d9cb30 = function GDJSInlineCode(runtimeScene) {
+};gdjs.Conclui_95ScormCode.userFunc0x1656750 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 console.log('JS_ConcluiScorm --------------------------');
 
@@ -322,7 +322,7 @@ gdjs.Conclui_95ScormCode.eventsList3 = function(runtimeScene) {
 {
 
 
-gdjs.Conclui_95ScormCode.userFunc0x1d9cb30(runtimeScene);
+gdjs.Conclui_95ScormCode.userFunc0x1656750(runtimeScene);
 
 }
 

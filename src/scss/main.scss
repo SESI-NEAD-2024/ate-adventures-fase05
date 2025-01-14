@@ -149,16 +149,16 @@ u {
   opacity: 1;
 }
 
-body::-webkit-scrollbar {
+body::-webkit-scrollbar, #fll .card-reveal::-webkit-scrollbar {
   width: 18px; /* width of the entire scrollbar */
 }
 
-body::-webkit-scrollbar-track {
+body::-webkit-scrollbar-track, #fll .card-reveal::-webkit-scrollbar-track {
   border-radius: 0px;
   background: rgb(226, 225, 222); /* color of the tracking area */
 }
 
-body::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb, #fll .card-reveal::-webkit-scrollbar-thumb {
   background-color: var(--yellow); /* color of the scroll thumb */
   border-radius: 8px; /* roundness of the scroll thumb */
   border: 3px solid var(--brown); /* creates padding around scroll thumb */
@@ -371,4 +371,18 @@ section {
   color: var(--yellow);
   text-shadow: 2px 2px 0px var(--brown);
   -webkit-text-stroke: 0px var(--brown);
+}
+
+
+// Referencias
+.references-container {
+  width: 100%;
+  max-width: 758px;
+  padding: -6px 0 0;
+  font: 400 14px/22px Rig Sans, sans-serif;
+}
+
+.reference-title {
+  font-weight: 700;
+  line-height: 21px;
 }

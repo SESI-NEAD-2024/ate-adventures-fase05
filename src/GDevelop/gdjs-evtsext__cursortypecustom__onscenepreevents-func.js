@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__CursorTypeCustom__onScenePreEvents !== "undefined") {
 gdjs.evtsExt__CursorTypeCustom__onScenePreEvents = {};
 
 
-gdjs.evtsExt__CursorTypeCustom__onScenePreEvents.userFunc0x105c180 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__CursorTypeCustom__onScenePreEvents.userFunc0xbbae80 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 // Reset to default cursor
 runtimeScene.getGame().getRenderer().getCanvas().style.cursor =
@@ -73,7 +73,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.evtsExt__CursorTypeCustom__onScenePreEvents.userFunc0x105c180(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__CursorTypeCustom__onScenePreEvents.userFunc0xbbae80(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

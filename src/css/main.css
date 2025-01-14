@@ -11651,13 +11651,15 @@ footer.dark-mode {
   }
 }
 .content_menu_02 .nucleos-menu li {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+  padding: 4px 0;
   transition: all 0.3s ease-out;
   position: relative;
-  font-weight: 400;
+  font-weight: 600;
   font-family: rig-sans, "Roboto", "Helvetica Neue", sans-serif;
   font-size: 16px;
   color: var(--brown);
+  opacity: 0.75;
 }
 @media only screen and (max-width : 600.99px) {
   .content_menu_02 .nucleos-menu li {
@@ -11666,22 +11668,22 @@ footer.dark-mode {
 }
 .content_menu_02 .nucleos-menu li.selected {
   font-weight: 700;
-}
-.content_menu_02 .nucleos-menu li.selected::before {
-  content: ".";
-  display: block;
-  position: absolute;
-  left: -15px;
-  top: -15px;
-  font-size: 1.875rem;
-}
-@media only screen and (max-width : 600.99px) {
-  .content_menu_02 .nucleos-menu li.selected::before {
-    font-size: 1.875rem;
-  }
+  border-radius: 9px;
+  background-color: var(--yellow);
+  color: var(--brown);
+  transition: all 0.25s;
+  background-color: var(--yellow);
+  border: 2px solid var(--brown);
+  box-shadow: 0px -3px 0px 0px var(--yellow-dark) inset, 0px 3px 0px 0px var(--yellow-light) inset;
+  border-radius: 4px;
+  font-family: lores-12, "Roboto", "Helvetica Neue", sans-serif;
+  padding: 4px 8px;
+  opacity: 1;
+  font-size: 14px;
+  color: var(--brown);
 }
 .content_menu_02 .nucleos-menu li:hover {
-  font-weight: 700;
+  opacity: 1;
 }
 
 .image-map {
@@ -11796,6 +11798,10 @@ footer.dark-mode {
   .video-box iframe {
     min-height: 250px !important;
   }
+}
+
+#credits .video-box {
+  padding: 1rem;
 }
 
 #game-frame {
@@ -12066,16 +12072,16 @@ u {
   opacity: 1;
 }
 
-body::-webkit-scrollbar {
+body::-webkit-scrollbar, #fll .card-reveal::-webkit-scrollbar {
   width: 18px; /* width of the entire scrollbar */
 }
 
-body::-webkit-scrollbar-track {
+body::-webkit-scrollbar-track, #fll .card-reveal::-webkit-scrollbar-track {
   border-radius: 0px;
   background: rgb(226, 225, 222); /* color of the tracking area */
 }
 
-body::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb, #fll .card-reveal::-webkit-scrollbar-thumb {
   background-color: var(--yellow); /* color of the scroll thumb */
   border-radius: 8px; /* roundness of the scroll thumb */
   border: 3px solid var(--brown); /* creates padding around scroll thumb */
@@ -12269,4 +12275,16 @@ section {
   color: var(--yellow);
   text-shadow: 2px 2px 0px var(--brown);
   -webkit-text-stroke: 0px var(--brown);
+}
+
+.references-container {
+  width: 100%;
+  max-width: 758px;
+  padding: -6px 0 0;
+  font: 400 14px/22px Rig Sans, sans-serif;
+}
+
+.reference-title {
+  font-weight: 700;
+  line-height: 21px;
 }

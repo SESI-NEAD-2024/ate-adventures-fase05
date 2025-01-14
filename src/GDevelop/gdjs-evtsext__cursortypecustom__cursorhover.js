@@ -86,7 +86,7 @@ gdjs.evtsExt__CursorTypeCustom__CursorHover.CursorHover.prototype.doStepPostEven
 
 
 gdjs.evtsExt__CursorTypeCustom__CursorHover.CursorHover.prototype.doStepPostEventsContext.mapOfGDgdjs_9546evtsExt_9595_9595CursorTypeCustom_9595_9595CursorHover_9546CursorHover_9546prototype_9546doStepPostEventsContext_9546GDObjectObjects1Objects = Hashtable.newFrom({"Object": gdjs.evtsExt__CursorTypeCustom__CursorHover.CursorHover.prototype.doStepPostEventsContext.GDObjectObjects1});
-gdjs.evtsExt__CursorTypeCustom__CursorHover.CursorHover.prototype.doStepPostEventsContext.userFunc0xa4e410 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__CursorTypeCustom__CursorHover.CursorHover.prototype.doStepPostEventsContext.userFunc0x142ecf0 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 // Set cursor to behavior property cursor_type
 objects.forEach(object => {
@@ -111,7 +111,7 @@ gdjs.evtsExt__CursorTypeCustom__CursorHover.CursorHover.prototype.doStepPostEven
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__CursorTypeCustom__CursorHover.CursorHover.prototype.doStepPostEventsContext.GDObjectObjects1);
-gdjs.evtsExt__CursorTypeCustom__CursorHover.CursorHover.prototype.doStepPostEventsContext.userFunc0xa4e410(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__CursorTypeCustom__CursorHover.CursorHover.prototype.doStepPostEventsContext.userFunc0x142ecf0(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

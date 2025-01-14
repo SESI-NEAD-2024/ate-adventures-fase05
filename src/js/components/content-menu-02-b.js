@@ -12,7 +12,7 @@ export default {
             
             <div>
               <p class="mt-0">
-              As equipes são formadas por 10 estudantes do ensino médio, que são desafiados a projetar, construir e programar robôs de tamanho industrial para competir em um jogo de arena. Além disso, os competidores têm a oportunidade de criar uma identidade para a equipe, arrecadar fundos e desenvolver suas habilidades por meio do trabalho colaborativo.​
+              As equipes são formadas por 10 estudantes do ensino médio do SESI e SENAI. Eles são desafiados a projetar, construir e programar robôs de tamanho industrial para competir em um jogo de arena. Os competidores podem criar uma identidade de equipe, arrecadar fundos e aprimorar as habilidades por meio do trabalho em equipe.​
               </p>
             </div>
           
@@ -53,7 +53,7 @@ export default {
   methods: {
     menu(event, menuOption) {
       // Remove classe de todos
-      let nucleosItems = document.getElementsByClassName("nucleos-item");
+      let nucleosItems = document.querySelectorAll(".content_menu_02--b .nucleos-item");
       for (var i = 0; i < nucleosItems.length; i++) {
         nucleosItems[i].classList.remove("selected");
       }
@@ -74,7 +74,7 @@ export default {
   //html
   template: `
      
-          <div class="content_menu_02" :data-order="idSelected">
+          <div class="content_menu_02 content_menu_02--b" :data-order="idSelected">
             <div class="box-attention content px-24 py-16 p-8-mobile" >
               <div class="row">
                 <div class="col m3 s3 nucleos-menu">

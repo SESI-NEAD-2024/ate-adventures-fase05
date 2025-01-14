@@ -7,7 +7,7 @@ export default {
     template: //html 
     `
     <div
-    class="video-box mt-80"
+    class="video-box mt-24"
     style="max-width: 970px; margin-left: auto; margin-right: auto"
   >
     <div id="video-play" class="play-wrap">

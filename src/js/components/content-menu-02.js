@@ -53,7 +53,7 @@ export default {
   methods: {
     menu(event, menuOption) {
       // Remove classe de todos
-      let nucleosItems = document.getElementsByClassName("nucleos-item");
+      let nucleosItems = document.querySelectorAll(".content_menu_02--a .nucleos-item");
       for (var i = 0; i < nucleosItems.length; i++) {
         nucleosItems[i].classList.remove("selected");
       }
@@ -74,7 +74,7 @@ export default {
   //html
   template: `
      
-          <div class="content_menu_02" :data-order="idSelected">
+          <div class="content_menu_02 content_menu_02--a" :data-order="idSelected">
             <div class="box-attention content px-24 py-16 p-8-mobile" >
               <div class="row">
                 <div class="col m3 s3 nucleos-menu">

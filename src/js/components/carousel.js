@@ -64,7 +64,7 @@ export default {
           html://html 
             `
             <p>
-            O evento também conta com demonstrações da modalidade FIRST® Robotics Competition
+            O evento também conta com demonstrações da modalidade FIRST® Robotics Competition (FRC)​.
             </p>
             `,
         },
