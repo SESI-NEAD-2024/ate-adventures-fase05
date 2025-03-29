@@ -1,24 +1,9 @@
-
-export default {
-  data() {
-    return {
-      idSelected: 0,
-      items: [
-        {
-          id: 0,
-          //html
-          html: `
+export default{data(){return{idSelected:0,items:[{id:0,html:`
             <h4 class="white-text">Núcleo de Educação à Distância</h4>
             <p class="white-text">
               Núcleo responsável por ações educacionais no formato EAD de forma coordenada com os demais núcleos. 
             </p>
-              `,
-        },
-
-        {
-          id: 1,
-          //html
-          html: `
+              `},{id:1,html:`
 <h4 class="white-text">Núcleo Pedagógico</h4>
 
             <p class="white-text">
@@ -26,66 +11,21 @@ export default {
               Núcleo responsável pelo acompanhamento da prática pedagógica nas escolas. Busca contribuir com o aprimoramento das práticas pedagógicas na articulação dos processos e formação de professores.
 
             </p>
-              `,
-        },
-        {
-          id: 2,
-          //html
-          html: `
+              `},{id:2,html:`
           <h4 class="white-text">Núcleo de Regulamentação Escolar
 </h4>
 
             <p class="white-text">
 Núcleo responsável por monitorar a legalidade do funcionamento das escolas, estabelecendo a comunicação com os órgãos fiscalizadores da Secretária de Estado de Educação, atuando na disseminação e aplicabilidade das legislações educacionais.
             </p>
-              `,
-        },
-        {
-          id: 3,
-          //html
-          html: `
+              `},{id:3,html:`
                     <h4 class="white-text">Núcleo de Inovação e Tecnologias Educacionais
 
 
             <p class="white-text">
 Núcleo responsável por pensar, refletir, analisar, planejar e executar projetos inovadores para a educação. Busca potencializar e contribuir para a inovação e para a construção de estratégias pedagógicas, elevando a qualidade do ensino na REDE SESI de Educação.
             </p>
-              `,
-        },
-      ],
-    };
-  },
-  methods: {
-    menu(event, menuOption) {
-      // Remove classe de todos
-      let nucleosItems = document.getElementsByClassName("nucleos-item");
-      for (var i = 0; i < nucleosItems.length; i++) {
-        nucleosItems[i].classList.remove("display1");
-      }
-
-      // Adiciona a classe para o item clicado
-      event.target.classList.add("display1");
-
-      // Conteúdo atual selecionado para mostrar html
-      this.idSelected = menuOption;
-
-      // Troca Background image
-      let nucleos = document.querySelector('.nucleos');
-      let url = './src/img/'+this.idSelected+'-nucleos.jpg';
-      nucleos.style.backgroundImage = `url(${url})`;
-    },
-  },
-  mounted() {
-    // Troca Background image
-    let nucleos = document.querySelector('.nucleos');
-    let url = './src/img/'+this.idSelected+'-nucleos.jpg';
-    nucleos.style.backgroundImage = `url(${url})`;
-  },
-
-  
-
-  template: //html
-  `
+              `}]}},methods:{menu(e,a){for(var s=document.getElementsByClassName("nucleos-item"),o=0;o<s.length;o++)s[o].classList.remove("display1");e.target.classList.add("display1"),this.idSelected=a;e=document.querySelector(".nucleos"),a="./src/img/"+this.idSelected+"-nucleos.jpg";e.style.backgroundImage=`url(${a})`}},mounted(){var e=document.querySelector(".nucleos"),a="./src/img/"+this.idSelected+"-nucleos.jpg";e.style.backgroundImage=`url(${a})`},template:`
       <div class="nucleos" :data-order="idSelected">
           <div class="filter"></div>
           <div class="mask-top"></div>
@@ -111,5 +51,4 @@ Núcleo responsável por pensar, refletir, analisar, planejar e executar projeto
 
           <div class="mask-bottom"></div>
         </div>
-    `,
-};
+    `};

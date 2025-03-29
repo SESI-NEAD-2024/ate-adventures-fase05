@@ -1,13 +1,4 @@
-export default {
-  data() {
-    return {
-      idSelected: 0,
-      items: [
-        {
-          id: 0,
-          
-          html://html
-           `
+export default{data(){return{idSelected:0,items:[{id:0,html:`
             
             
             <div>
@@ -16,25 +7,14 @@ export default {
               </p>
             </div>
           
-              `,
-        },
-
-        {
-          id: 1,
-          //html
-          html: `
+              `},{id:1,html:`
             <div>
               <p class="mt-0">
                 Cada equipe conta com dois técnicos: um instrutor do SENAI, responsável pelo robô, e um técnico do SESI, encarregado dos atributos de equipe. O ATE pode ou não ser o técnico do SESI. Caso o ATE não seja escolhido como técnico, ele deverá fornecer o apoio necessário à equipe e ao técnico, especialmente na ausência deste.​
               </p>
             </div>
           
-              `,
-        },
-        {
-          id: 2,
-          //html
-          html: `
+              `},{id:2,html:`
            
             
             <div>
@@ -43,36 +23,7 @@ export default {
               </p>
             </div>
           
-              `,
-        },
-        
-       
-      ],
-    };
-  },
-  methods: {
-    menu(event, menuOption) {
-      // Remove classe de todos
-      let nucleosItems = document.querySelectorAll(".content_menu_02--a .nucleos-item");
-      for (var i = 0; i < nucleosItems.length; i++) {
-        nucleosItems[i].classList.remove("selected");
-      }
-
-      // Adiciona a classe para o item clicado
-      event.target.classList.add("selected");
-
-      // Conteúdo atual selecionado para mostrar html
-      this.idSelected = menuOption;
-
-
-    },
-  },
-  mounted() {
-    
-  },
-
-  //html
-  template: `
+              `}]}},methods:{menu(e,o){for(var s=document.querySelectorAll(".content_menu_02--a .nucleos-item"),a=0;a<s.length;a++)s[a].classList.remove("selected");e.target.classList.add("selected"),this.idSelected=o}},mounted(){},template:`
      
           <div class="content_menu_02 content_menu_02--a" :data-order="idSelected">
             <div class="box-attention content px-24 py-16 p-8-mobile" >
@@ -96,6 +47,4 @@ export default {
           </div>
 
     
-    `,
-};
-
+    `};

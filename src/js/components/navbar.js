@@ -1,7 +1,4 @@
-export default {
-    name: "Navbar",
-    template: //html 
-    `
+export default{name:"Navbar",template:`
       <div class="navbar-fixed">
         <nav>
           <div class="nav-wrapper">
@@ -20,9 +17,4 @@ export default {
           </div>
         </nav>
       </div>
-    `,
-  };
-  
-    
-
-
+    `};

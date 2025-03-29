@@ -1,12 +1,4 @@
-export default {
-  data() {
-    return {
-      idSelected: 0,
-      items: [
-        {
-          id: 0,
-          //html
-          html: `
+export default{data(){return{idSelected:0,items:[{id:0,html:`
             <div class="row">
             <div class="col m4 s12">
               <img
@@ -23,13 +15,7 @@ export default {
               </p>
             </div>
           </div>
-              `,
-        },
-
-        {
-          id: 1,
-          //html
-          html: `
+              `},{id:1,html:`
 
           <div class="row">
             <div class="col m4 s12">
@@ -48,12 +34,7 @@ export default {
               </p>
             </div>
           </div>
-              `,
-        },
-        {
-          id: 2,
-          //html
-          html: `
+              `},{id:2,html:`
             <div class="row">
             <div class="col m4 s12">
               <img
@@ -70,12 +51,7 @@ export default {
               </p>
             </div>
           </div>
-              `,
-        },
-        {
-          id: 3,
-          //html
-          html: `
+              `},{id:3,html:`
             <div class="row">
             <div class="col m4 s12">
               <img
@@ -92,34 +68,7 @@ export default {
               </p>
             </div>
           </div>
-              `,
-        },
-      ],
-    };
-  },
-  methods: {
-    menu(event, menuOption) {
-      // Remove classe de todos
-      let nucleosItems = document.getElementsByClassName("nucleos-item");
-      for (var i = 0; i < nucleosItems.length; i++) {
-        nucleosItems[i].classList.remove("selected");
-      }
-
-      // Adiciona a classe para o item clicado
-      event.target.classList.add("selected");
-
-      // Conteúdo atual selecionado para mostrar html
-      this.idSelected = menuOption;
-
-
-    },
-  },
-  mounted() {
-    
-  },
-
-  //html
-  template: `
+              `}]}},methods:{menu(l,e){for(var i=document.getElementsByClassName("nucleos-item"),s=0;s<i.length;s++)i[s].classList.remove("selected");l.target.classList.add("selected"),this.idSelected=e}},mounted(){},template:`
      
           <div class="content_menu_01" :data-order="idSelected">
             <div class="box-attention content px-24 py-16 px-8-mobile" >
@@ -140,5 +89,4 @@ export default {
           </div>
 
     
-    `,
-};
+    `};

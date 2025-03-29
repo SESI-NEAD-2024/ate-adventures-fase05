@@ -3,15 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="description" content="A educação tecnológica na REDE SESI" />
     <meta name="author" content="SESI EAD" />
     <title>FASE 5 | ATE Adventures</title>
     <link rel="icon" type="image/png" href="src/img/core/Favicon.webp" />
-
     <!-- Font -->
     <link rel="stylesheet" href="https://use.typekit.net/hgj6bzh.css" />
-
     <!-- CSS -->
     <link
       type="text/css"
@@ -19,45 +17,36 @@
       href="src/css/main.css"
       media="screen"
     />
-
     <!-- Vue DEV MODE -->
     <!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> -->
-
     <!-- Vue PROD MODE -->
     <script
       rel="preconnect"
       src="https://unpkg.com/vue@3/dist/vue.global.prod.js"
     ></script>
-
     <!-- Vue Router -->
     <!-- <script src="https://unpkg.com/vue-router@4.2.0/dist/vue-router.global.js"></script> -->
-
     <!-- Scorm JS -->
-    <script src="src/js/scorm/APIWrapper.js"></script>
+    <!-- <script src="src/js/scorm/APIWrapper.js"></script>
     <script src="src/js/scorm/SCOFunctions.js"></script>
-    <script src="src/js/scorm/scorm-app.js"></script>
-
+    <script src="src/js/scorm/scorm-app.js"></script> -->
     <!-- Materialize JS -->
     <script
       type="text/javascript"
       src="src/js/materialize/materialize.js"
-      defer
+      defer="defer"
     ></script>
-
     <!-- AOS JS -->
     <script
       type="text/javascript"
       src="src/js/aos-master/aos.js"
-      defer
+      defer="defer"
     ></script>
-
     <!-- HystModal Modal JS-->
     <link rel="stylesheet" href="src/css/hystmodal.min.css" />
     <script src="src/js/hystmodal/hystmodal.min.js"></script>
-
     <!--**************** App.js JS customizado aqui ****************-->
     <script type="module" src="src/js/app.js"></script>
-
     <!-- AOS Animation CSS-->
     <link type="text/css" rel="stylesheet" href="src/css/aos.css" />
     <!-- HystModal Modal CSS-->
@@ -66,16 +55,12 @@
   <body>
     <div id="app">
       <!-- loading ---------------------------------- -->
-      <div id="loading">
-        <div class="spinner"></div>
-      </div>
+      <div id="loading"><div class="spinner"></div></div>
       <div id="content">
-        <!-- Navbar ---------------------------------- -->
-        <navbar></navbar>
-
-        <!-- Hero Banner ---------------------------------- -->
-        <hero>
-          <div>
+        <!-- Navbar ---------------------------------- --><navbar
+        ></navbar
+        ><!-- Hero Banner ---------------------------------- --><hero
+          ><div>
             <h2>FASE 5</h2>
             <br />
             <div
@@ -85,24 +70,21 @@
                 >Modalidades de competição e o Festival SESI de Robótica</span
               >
             </div>
-
             <p class="center-align mt-60">
               Confira o vídeo de uma das temporadas do Festival SESI de
               Robótica.
             </p>
-
-            <video-box>
-              <template v-slot:play>
-                <a
+            <video-box
+              ><template v-slot:play
+                ><a
                   href="https://www.youtube.com/watch?v=X-Z1s2mIDKE"
                   target="_blank"
-                >
-                  <img src="src/img/video-play.svg" alt="Play" loading="lazy" />
-                </a>
-              </template>
-
-              <template v-slot:visual>
-                <img
+                  ><img
+                    src="src/img/video-play.svg"
+                    alt="Play"
+                    loading="lazy" /></a></template
+              ><template v-slot:visual
+                ><img
                   src="src/img/video.webp"
                   alt="Modalidades de competição e o Festival SESI de Robótica"
                   loading="lazy"
@@ -111,14 +93,11 @@
                     aspect-ratio: 16/9;
                     object-fit: cover;
                     object-position: center;
-                  "
-                />
-              </template>
-            </video-box>
+                  " /></template
+            ></video-box>
           </div>
           ​</hero
-        >
-        <!-- FESTIVAL SESI DE ROBÓTICA ------------------------------------>
+        ><!-- FESTIVAL SESI DE ROBÓTICA ------------------------------------>
         <section id="festival" class="pt-80 pt-0-mobile" style="line-height: 0">
           <div class="container">
             <div class="center-align mb-40">
@@ -126,10 +105,8 @@
                 FESTIVAL SESI DE ROBÓTICA
               </h1>
             </div>
-
             <carousel></carousel>
           </div>
-
           <div class="zero-gap container--medium mt-60">
             <p><b>As competições oferecem oportunidades para:</b></p>
             <div class="row">
@@ -142,7 +119,6 @@
                 </div>
               </div>
             </div>
-
             <div class="row">
               <div class="col l2 m2 s0"></div>
               <div class="col l10 m10 s12">
@@ -151,7 +127,6 @@
                 </div>
               </div>
             </div>
-
             <div class="row">
               <div class="col l10 m10 s12">
                 <div class="box-txt-01 px-40 py-24" data-aos="fade-left">
@@ -161,7 +136,6 @@
                 </div>
               </div>
             </div>
-
             <div class="row">
               <div class="col l2 m2 s12"></div>
               <div class="col l10 m10 s12">
@@ -174,7 +148,6 @@
                 </div>
               </div>
             </div>
-
             <div class="row">
               <div class="col l10 m10 s12">
                 <div
@@ -182,12 +155,12 @@
                   data-aos="fade-left"
                 >
                   <p>
-                    ◆ Desenvolver habilidades técnicas, como programação, desenhos técnicos e prototipação.
+                    ◆ Desenvolver habilidades técnicas, como programação,
+                    desenhos técnicos e prototipação.
                   </p>
                 </div>
               </div>
             </div>
-
             <!-- QR CODE -->
             <div class="flex--align-center mt-80 mt-240-tablet mt-60-mobile">
               <img
@@ -206,7 +179,6 @@
               </div>
             </div>
           </div>
-
           <img
             src="src/img/fll-top.png"
             alt="Seção"
@@ -215,13 +187,11 @@
             style="margin-bottom: -4px"
           />
         </section>
-
         <!-- FIRST® LEGO® Leagu eChallenge (FLL) -->
         <section id="fll" class="py-80 bg-blue-03">
           <h3 class="center-align mb-40">
             FIRST® LEGO® League Challenge (FLLC)
           </h3>
-
           <div class="container">
             <!-- CARDS -->
             <div class="cards mx-80 mx-0-tablet">
@@ -251,23 +221,20 @@
                     <div class="card-content activator">
                       <span
                         class="card-title activator blue-light-text flex--justify-between"
+                        ><h5>Conheça</h5></span
                       >
-                        <h5>Conheça</h5>
-                      </span>
                     </div>
                     <div class="card-reveal">
                       <span
                         class="card-title flex--justify-between flex--align-center"
-                      >
-                        <p></p>
+                        ><p></p>
                         <img
                           data-hystclose
                           class="modal-close pointer"
                           src="src/img/close-light.svg"
                           alt="Close"
                           loading="lazy"
-                        />
-                      </span>
+                      /></span>
                       <p>
                         Estudantes de 9 a 15 anos são desafiados a buscar
                         soluções para problemas do dia a dia, com temas que
@@ -287,7 +254,6 @@
                     </div>
                   </div>
                 </div>
-
                 <div class="col m6 s12">
                   <!-- Card -->
                   <div class="card box-attention">
@@ -312,23 +278,20 @@
                     <div class="card-content activator">
                       <span
                         class="card-title activator blue-light-text flex--justify-between"
+                        ><h5>Conheça</h5></span
                       >
-                        <h5>Conheça</h5>
-                      </span>
                     </div>
                     <div class="card-reveal">
                       <span
                         class="card-title flex--justify-between flex--align-center"
-                      >
-                        <p></p>
+                        ><p></p>
                         <img
                           data-hystclose
                           class="modal-close pointer"
                           src="src/img/close-light.svg"
                           alt="Close"
                           loading="lazy"
-                        />
-                      </span>
+                      /></span>
                       <p>
                         Para integrar uma equipe FLL, os alunos precisam ser
                         aprovados em um processo seletivo, organizado por meio
@@ -340,7 +303,6 @@
                     </div>
                   </div>
                 </div>
-
                 <div class="col m6 s12">
                   <!-- Card -->
                   <div class="card box-attention">
@@ -365,23 +327,20 @@
                     <div class="card-content activator">
                       <span
                         class="card-title activator blue-light-text flex--justify-between"
+                        ><h5>Conheça</h5></span
                       >
-                        <h5>Conheça</h5>
-                      </span>
                     </div>
                     <div class="card-reveal">
                       <span
                         class="card-title flex--justify-between flex--align-center"
-                      >
-                        <p></p>
+                        ><p></p>
                         <img
                           data-hystclose
                           class="modal-close pointer"
                           src="src/img/close-light.svg"
                           alt="Close"
                           loading="lazy"
-                        />
-                      </span>
+                      /></span>
                       <p>
                         O edital prevê a realização de um Torneio Microrregional
                         entre equipes da mesma região. ​ Esse torneio faz parte
@@ -394,7 +353,6 @@
                     </div>
                   </div>
                 </div>
-
                 <div class="col m6 s12">
                   <!-- Card -->
                   <div class="card box-attention">
@@ -419,23 +377,20 @@
                     <div class="card-content activator">
                       <span
                         class="card-title activator blue-light-text flex--justify-between"
+                        ><h5>Conheça</h5></span
                       >
-                        <h5>Conheça</h5>
-                      </span>
                     </div>
                     <div class="card-reveal">
                       <span
                         class="card-title flex--justify-between flex--align-center"
-                      >
-                        <p></p>
+                        ><p></p>
                         <img
                           data-hystclose
                           class="modal-close pointer"
                           src="src/img/close-light.svg"
                           alt="Close"
                           loading="lazy"
-                        />
-                      </span>
+                      /></span>
                       <p>
                         Após a seleção dos competidores da equipe oficial, a
                         gerência da unidade definirá o técnico oficial, que pode
@@ -451,7 +406,6 @@
             </div>
           </div>
         </section>
-
         <!-- FIRST® TECH Challenge (FTC) -->
         <section id="ftc" class="pb-80 pb-184 pb-144-mobile bg-blue-03">
           <div class="container--medium">
@@ -461,11 +415,9 @@
               alt="FIRST® TECH Challenge (FTC)"
               loading="lazy"
               style="width: 100%"
-            />
-            <content-menu-02 class="mt-40"></content-menu-02>
+            /><content-menu-02 class="mt-40"></content-menu-02>
           </div>
         </section>
-
         <!-- FIRST®RoboticsCompetition (FRC) -->
         <section id="frc" class="pt-80 bg-blue-03">
           <div class="container--medium">
@@ -475,11 +427,9 @@
               alt="FIRST®RoboticsCompetition (FRC)"
               loading="lazy"
               style="width: 100%"
-            />
-            <content-menu-02-b class="mt-40"></content-menu-02-b>
+            /><content-menu-02-b class="mt-40"></content-menu-02-b>
           </div>
         </section>
-
         <!-- F1 in Schools (F1) -->
         <section id="f1" class="bg-blue-03 pt-80 pb-240 pb-144-mobile">
           <div class="container--medium">
@@ -512,7 +462,6 @@
                 loading="lazy"
                 style="width: 100%; max-width: 650px; margin: auto"
               />
-
               <div style="width: 100%; max-width: 650px; margin: auto">
                 <div class="row pt-60">
                   <div class="col l3 m6 s6 center-align">
@@ -529,7 +478,6 @@
                       class="mb-24"
                     />
                   </div>
-
                   <div class="col l3 m6 s6 center-align">
                     <div
                       class="question-btn pointer mb-40"
@@ -544,7 +492,6 @@
                       class="mb-24"
                     />
                   </div>
-
                   <div class="col l3 m6 s6 center-align">
                     <div
                       class="question-btn pointer mb-40"
@@ -559,7 +506,6 @@
                       class="mb-24"
                     />
                   </div>
-
                   <div class="col l3 m6 s6 center-align">
                     <div
                       class="question-btn pointer mb-40"
@@ -579,7 +525,6 @@
             </div>
           </div>
         </section>
-
         <!-- PRÉ JOGO ------------------------------------>
         <section id="missao" class="py-80 bg-blue-04">
           <div class="center-align">
@@ -606,7 +551,6 @@
                 Uma nova equipe de robótica foi formada recentemente na sua
                 unidade.
               </h3>
-
               <img
                 src="src/img/characters.png"
                 alt="Personagens"
@@ -618,7 +562,6 @@
                 para criar um Kahoot sobre as modalidades de competição.
               </h4>
             </div>
-
             <div class="box-attention box-attention--image mt-40">
               <div data-aos="fade-right" class="box-icon mr-24">
                 <img src="src/img/medal.gif" alt="Star" loading="lazy" />
@@ -629,7 +572,6 @@
                 Boa sorte!
               </h5>
             </div>
-
             <div class="mt-40 center-align flex--justify-center">
               <div style="width: 100%; max-width: 560px">
                 <img
@@ -643,9 +585,7 @@
             </div>
           </div>
         </section>
-
         <game-fase></game-fase>
-
         <div
           id="credits"
           class="center-align pt-80 px-16"
@@ -664,7 +604,6 @@
             />
           </div>
         </div>
-
         <div
           id="references"
           class="pt-80"
@@ -679,37 +618,25 @@
               <span class="reference-title"
                 >Base Nacional Comum Curricular</span
               >
-              . Brasília: MEC/SEB, 2018.
-              <br />
-              <br />
-              BRASIL. Ministério da Educação.
+              . Brasília: MEC/SEB, 2018.<br /><br />BRASIL. Ministério da
+              Educação.
               <span class="reference-title"
                 >Base Nacional Comum Curricular: Computação: Complemento à
                 BNCC</span
               >
-              . Brasília: MEC/SEB, 2022.
-              <br />
-              <br />
-              PROPOSTA PEDAGÓGICA. Serviço Social da Indústria DR/MG. Belo
-              Horizonte, 2024.
-              <br />
-              <br />
-              SERVIÇO SOCIAL DA INDÚSTRIA. Torneio de Robótica. Disponível em:
+              . Brasília: MEC/SEB, 2022.<br /><br />PROPOSTA PEDAGÓGICA. Serviço
+              Social da Indústria DR/MG. Belo Horizonte, 2024.<br /><br />SERVIÇO
+              SOCIAL DA INDÚSTRIA. Torneio de Robótica. Disponível em:
               https://www.portaldaindustria.com.br/sesi/canais/torneio-de-robotica/.
-              Acesso em: 9 dez. 2024.
-              <br />
-              <br />
-              SERVIÇO SOCIAL DA INDÚSTRIA.
+              Acesso em: 9 dez. 2024.<br /><br />SERVIÇO SOCIAL DA INDÚSTRIA.
               <span class="reference-title">Guia de educação tecnológica</span>
               . Belo Horizonte: SESI/DR-MG, [2024]. 29 p.
             </div>
           </div>
         </div>
-
-        <!-- Footer ---------------------------------- -->
-        <app-footer></app-footer>
-
-        <!-- Modal 1-->
+        <!-- Footer ---------------------------------- --><app-footer
+        ></app-footer
+        ><!-- Modal 1-->
         <div class="hystmodal" id="modal-1" aria-hidden="true">
           <div class="hystmodal__wrap">
             <div class="container--medium" role="dialog" aria-modal="true">
@@ -739,9 +666,7 @@
             </div>
           </div>
         </div>
-        <!-- Fim Modal 1-->
-
-        <!-- Modal 2-->
+        <!-- Fim Modal 1--><!-- Modal 2-->
         <div class="hystmodal" id="modal-2" aria-hidden="true">
           <div class="hystmodal__wrap">
             <div class="container--medium" role="dialog" aria-modal="true">
@@ -770,7 +695,6 @@
             </div>
           </div>
         </div>
-
         <!-- Modal 3-->
         <div class="hystmodal" id="modal-3" aria-hidden="true">
           <div class="hystmodal__wrap">
@@ -800,7 +724,6 @@
             </div>
           </div>
         </div>
-
         <!-- Modal 4-->
         <div class="hystmodal" id="modal-4" aria-hidden="true">
           <div class="hystmodal__wrap">

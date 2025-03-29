@@ -1,11 +1,4 @@
-
-
-
-export default {
-    name: "Hero",
-
-    template: //html 
-    `
+export default{name:"Hero",template:`
     <div id="hero">
     <div class="container">
       <div class="center-align">
@@ -13,9 +6,4 @@ export default {
       </div>
     </div>
   </div>
-    `,
-  };
-  
-    
-
-
+    `};

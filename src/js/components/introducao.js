@@ -1,74 +1,4 @@
-export default {
-  data() {
-    return {
-      formData: {
-        Jogador_Nome: null,
-        Personagem: null,
-      },
-      submitted: false,
-      debugWithoutScorm: false,
-    };
-  },
-  mounted() {
-    console.log("Componente INTRODUCAO");
-    console.log(FIELDS.suspendData);
-  },
-  methods: {
-    handleSubmit() {
-      this.submitted = true;
-
-      if (
-        this.submitted &&
-        this.formData.Jogador_Nome != null &&
-        this.formData.Personagem != null
-      ) {
-        this.saveToScorm();
-        // Direciona para o curso
-        this.$router.push("/curso-fase-01");
-      }
-    },
-
-    /**
-     * Salva os dados do formulário no SCORM
-     * Usa função do arquivo 'scorm-app.js'
-     * @private
-     */
-    saveToScorm() {
-      // Salva dados em formato JSON
-      let save = JSON.stringify(this.formData);
-      if (!this.debugWithoutScorm) {
-        
-        saveSuspendData(save);
-        console.log(FIELDS.suspendData);
-        console.log(getScormData(FIELDS.suspendData));
-      }
-
-
-    },
-    selectPersonagem(event, id) {
-      // Remove classe de todos
-      let items = document.getElementsByClassName("characters-item");
-      for (var i = 0; i < items.length; i++) {
-        items[i].classList.remove("characters-selected");
-      }
-
-      if (event.currentTarget.tagName.toLowerCase() === "label") {
-        // Adiciona a classe para o item clicado
-        event.currentTarget.classList.add("characters-selected");
-      }
-
-      // Valor do radio selecionado
-
-      this.Personagem = id;
-
-      // OBS.: Essa lógica não está boa, o ideal seria controlar tudo com base no valor recebido do
-      // input radio para funcionar de maneira geral em outras partes do projeto
-    },
-  },
-
-  
-  template: //html
-  `
+export default{data(){return{formData:{Jogador_Nome:null,Personagem:null},submitted:!1,debugWithoutScorm:!1}},mounted(){console.log("Componente INTRODUCAO"),console.log(FIELDS.suspendData)},methods:{handleSubmit(){this.submitted=!0,this.submitted&&null!=this.formData.Jogador_Nome&&null!=this.formData.Personagem&&(this.saveToScorm(),this.$router.push("/curso-fase-01"))},saveToScorm(){var e=JSON.stringify(this.formData);this.debugWithoutScorm||(saveSuspendData(e),console.log(FIELDS.suspendData),console.log(getScormData(FIELDS.suspendData)))},selectPersonagem(e,a){for(var t=document.getElementsByClassName("characters-item"),r=0;r<t.length;r++)t[r].classList.remove("characters-selected");"label"===e.currentTarget.tagName.toLowerCase()&&e.currentTarget.classList.add("characters-selected"),this.Personagem=a}},template:`
    <div class="introducao-game  flex--align-center flex--justify-center">
     <div class="container--medium center-align">
       <h1 class="mb-40">ESCOLHA SEU PERSONAGEM</h1>
@@ -123,5 +53,4 @@ export default {
       </form>
   </div>
  </div>
-      `,
-};
+      `};

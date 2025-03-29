@@ -1,12 +1,4 @@
-
-
-export default {
-  mounted() {
-    console.log("fliperama");
-  },
-
-  template://html
-   `
+export default{mounted(){console.log("fliperama")},template:`
 <div class="introducao-game">
   <div class="fliperama">
 
@@ -14,5 +6,4 @@ export default {
 
   </div>
 </div>
-    `,
-};
+    `};

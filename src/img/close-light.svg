@@ -1,16 +1,1 @@
-<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g id="Close Button">
-<g id="Background" filter="url(#filter0_b_863_1927)">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z" fill="#EEF8E1"/>
-</g>
-<path id="X" fill-rule="evenodd" clip-rule="evenodd" d="M13.7503 6.41703C13.4353 6.10205 12.9246 6.10209 12.6095 6.41713L9.94881 9.07784L7.3392 6.46822C7.02421 6.15323 6.51348 6.15327 6.19844 6.46831C5.8834 6.78335 5.88336 7.29409 6.19834 7.60907L8.80796 10.2187L6.1474 12.8793C5.83236 13.1943 5.83232 13.705 6.1473 14.02C6.46229 14.335 6.97302 14.335 7.28806 14.0199L9.94863 11.3594L12.5584 13.9692C12.8734 14.2842 13.3842 14.2841 13.6992 13.9691C14.0142 13.654 14.0143 13.1433 13.6993 12.8283L11.0895 10.2185L13.7502 7.55779C14.0652 7.24275 14.0653 6.73202 13.7503 6.41703Z" fill="#3B2027"/>
-</g>
-<defs>
-<filter id="filter0_b_863_1927" x="-36.0695" y="-36.0695" width="92.139" height="92.139" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feGaussianBlur in="BackgroundImageFix" stdDeviation="18.0348"/>
-<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_863_1927"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_863_1927" result="shape"/>
-</filter>
-</defs>
-</svg>
+<svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><g filter="url(#filter0_b_863_1927)"><path fill-rule="evenodd" clip-rule="evenodd" d="M10 20c5.523 0 10-4.477 10-10S15.523 0 10 0 0 4.477 0 10s4.477 10 10 10z" fill="#EEF8E1"/></g><path fill-rule="evenodd" clip-rule="evenodd" d="M13.75 6.417a.807.807 0 00-1.14 0l-2.661 2.66-2.61-2.609A.807.807 0 006.2 7.61l2.609 2.61-2.66 2.66a.807.807 0 101.14 1.14l2.66-2.66 2.61 2.61a.807.807 0 001.141-1.14l-2.61-2.61 2.661-2.661a.807.807 0 000-1.141z" fill="#3B2027"/><defs><filter id="filter0_b_863_1927" x="-36.069" y="-36.069" width="92.139" height="92.139" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feGaussianBlur in="BackgroundImageFix" stdDeviation="18.035"/><feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_863_1927"/><feBlend in="SourceGraphic" in2="effect1_backgroundBlur_863_1927" result="shape"/></filter></defs></svg>

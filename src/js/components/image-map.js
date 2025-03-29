@@ -1,18 +1,4 @@
-
-export default {
-
-  mounted() {
-
-    
-  },
-  methods: {
-
-
-  },
-
-
-  template:   //html
-  `
+export default{mounted(){},methods:{},template:`
   <div class="image-map">
   <img class="image-bg" src="./src/img/Quadro.webp" alt="Sala de aula" loading="lazy">
 
@@ -100,5 +86,4 @@ export default {
 
 
 </div>
-   `,
-};
+   `};
